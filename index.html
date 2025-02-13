@@ -72,6 +72,14 @@
   </main>
 
   <script src="js/main.js"></script>
+  <script>
+    window.addEventListener("scroll", () => {
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+            window.location.href = "about.html"; // Change to the next page
+        }, 1000); // Match timeout with CSS animation duration
+    });
+</script>
 </body>
 
 </html>

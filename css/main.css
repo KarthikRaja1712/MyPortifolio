@@ -50,12 +50,14 @@
     background: #434242;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
+    .fade-out {
+      opacity: 0;
+  }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-
+      width: 400px;
+      height: 400px;
       background: url("../img/cat0.jpg");
       border-radius: 50%;
       border: solid 3px #eece1a; }
@@ -102,7 +104,8 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+  transition: opacity 1s ease-in-out; }
   body#bg-img {
     background: url(../img/bg1.webp);
     background: rgba(68, 68, 68, 0.9), url(../img/bg1.webp);
